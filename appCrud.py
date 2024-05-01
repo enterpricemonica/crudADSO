@@ -147,6 +147,7 @@ class ProductCRUDApp:
                 for entry, value in zip(self.entries.values(), values[1:]):
                     entry.delete(0, tk.END)
                     entry.insert(0, value)
+                    
 
     def clear_input_fields(self):
         for entry in self.entries.values():
